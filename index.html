@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Rakat Timur — Artisan Pizza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-pizza">🍕</div>
+            <p>Menyiapkan yang terbaik...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <a href="#" class="logo">
+            <span class="logo-icon">🍕</span>
+            Pizza Rakat Timur
+        </a>
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#services" class="nav-link">Service</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class='bx bx-moon'></i>
+            </button>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="home-badge">✦ Artisan Since 2010 ✦</div>
+            <h1 class="home-title">
+                <span class="title-line">Pizza</span>
+                <span class="title-line italic">Nikmat</span>
+            </h1>
+            <p class="home-subtitle">Pizza yang menggugah selera dari fantasi Anda — dibuat dengan cinta, bahan segar pilihan, dan resep turun-temurun.</p>
+            <div class="home-cta">
+                <a href="#menu" class="btn btn-primary">
+                    <span>Lihat Menu</span>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+                <a href="#about" class="btn btn-ghost">Tentang Kami</a>
+            </div>
+            <div class="home-stats">
+                <div class="stat">
+                    <strong>12+</strong>
+                    <span>Menu Pizza</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <strong>5K+</strong>
+                    <span>Pelanggan Puas</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <strong>4.9★</strong>
+                    <span>Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="home-visual">
+            <div class="pizza-ring ring-1"></div>
+            <div class="pizza-ring ring-2"></div>
+            <div class="pizza-ring ring-3"></div>
+            <div class="home-img-wrap">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=90" alt="Artisan Pizza" class="hero-img">
+            </div>
+            <div class="float-badge badge-1">
+                <i class='bx bxs-star'></i> Fresh Daily
+            </div>
+            <div class="float-badge badge-2">
+                🌿 Organic
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img-wrap">
+            <div class="about-img-accent"></div>
+            <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395__480.jpg" alt="Our Pizza" class="about-img">
+            <div class="about-img-tag">
+                <strong>13</strong>
+                <span>Tahun Pengalaman</span>
+            </div>
+        </div>
+        <div class="about-text">
+            <div class="section-label">✦ About Us</div>
+            <h2>Kami membuat pizza yang <em>luar biasa</em> dan penuh cita rasa</h2>
+            <p>Setiap pizza yang kami buat adalah karya seni kuliner — dari adonan yang diulen tangan hingga saus tomat segar yang dimasak lambat. Kami percaya pizza yang baik dimulai dari bahan yang tepat dan hati yang tulus.</p>
+            <ul class="about-features">
+                <li><i class='bx bx-check-circle'></i> Bahan lokal segar setiap hari</li>
+                <li><i class='bx bx-check-circle'></i> Adonan tanpa pengawet</li>
+                <li><i class='bx bx-check-circle'></i> Oven kayu tradisional</li>
+                <li><i class='bx bx-check-circle'></i> Resep autentik Italia</li>
+            </ul>
+            <a href="#menu" class="btn btn-primary">
+                <span>Eksplorasi Menu</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="section-header">
+            <div class="section-label">✦ Menu Kami</div>
+            <h2>Pilihan <em>Lezat</em></h2>
+            <p>Setiap gigitan adalah petualangan rasa yang tak terlupakan</p>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-card" data-aos="fade-up">
+                <div class="card-img">
+                    <img src="https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?cs=srgb&fm=jpg&w=600" alt="Cheese Pizza">
+                    <div class="card-overlay">
+                        <a href="#" class="card-order-btn">Pesan Sekarang</a>
+                    </div>
+                    <div class="card-tag">Bestseller</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span class="card-category">Classic</span>
+                        <div class="card-rating">★★★★★</div>
+                    </div>
+                    <h3>Cheese Pizza</h3>
+                    <p>Suguhan yang menggoda dengan mozzarella premium meleleh sempurna</p>
+                    <div class="card-footer">
+                        <span class="card-price">Rp 30.000</span>
+                        <button class="add-btn"><i class='bx bx-plus'></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card featured" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-img">
+                    <img src="https://img.freepik.com/free-photo/pepperoni-pizza-with-sausages-cheese-dark-wooden-table_220768-9277.jpg?w=600" alt="Tropical Pizza">
+                    <div class="card-overlay">
+                        <a href="#" class="card-order-btn">Pesan Sekarang</a>
+                    </div>
+                    <div class="card-tag featured-tag">Chef's Pick</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span class="card-category">Signature</span>
+                        <div class="card-rating">★★★★★</div>
+                    </div>
+                    <h3>Tropical Pizza</h3>
+                    <p>Kelezatan tak tertahankan dengan perpaduan topping tropis segar</p>
+                    <div class="card-footer">
+                        <span class="card-price">Rp 40.000</span>
+                        <button class="add-btn"><i class='bx bx-plus'></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-img">
+                    <img src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg?w=600" alt="Macaroni Pizza">
+                    <div class="card-overlay">
+                        <a href="#" class="card-order-btn">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span class="card-category">Special</span>
+                        <div class="card-rating">★★★★☆</div>
+                    </div>
+                    <h3>Macaroni Pizza</h3>
+                    <p>Kelezatan yang memanjakan lidah dengan macaroni al dente</p>
+                    <div class="card-footer">
+                        <span class="card-price">Rp 20.000</span>
+                        <button class="add-btn"><i class='bx bx-plus'></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <div class="section-label">✦ Layanan</div>
+            <h2>Cara Kami <em>Bekerja</em></h2>
+            <p>Kami menyediakan layanan kuliner terbaik dari dapur hingga meja Anda</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" data-step="01">
+                <div class="service-icon">
+                    <img src="https://images.pexels.com/photos/280453/pexels-photo-280453.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Order">
+                </div>
+                <h3>You Order</h3>
+                <p>Pilih pizza favorit Anda melalui aplikasi atau hubungi kami langsung. Proses pemesanan cepat dan mudah.</p>
+                <div class="service-number">01</div>
+            </div>
+            <div class="service-arrow"><i class='bx bx-right-arrow-alt'></i></div>
+            <div class="service-card" data-step="02">
+                <div class="service-icon">
+                    <img src="https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Ship">
+                </div>
+                <h3>Shipping</h3>
+                <p>Pizza dikemas dengan rapi dan dikirim cepat oleh kurir kami yang berpengalaman ke lokasi Anda.</p>
+                <div class="service-number">02</div>
+            </div>
+            <div class="service-arrow"><i class='bx bx-right-arrow-alt'></i></div>
+            <div class="service-card" data-step="03">
+                <div class="service-icon">
+                    <img src="https://images.pexels.com/photos/4393426/pexels-photo-4393426.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Delivered">
+                </div>
+                <h3>Delivered</h3>
+                <p>Pizza tiba hangat dan sempurna di pintu Anda. Nikmati bersama keluarga dan orang-orang tercinta.</p>
+                <div class="service-number">03</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="cta-content">
+            <div class="section-label light">✦ Let's Connect</div>
+            <h2>Siap mencicipi pizza <em>terbaik</em>?</h2>
+            <p>Hubungi kami hari ini dan dapatkan diskon 10% untuk pemesanan pertama Anda.</p>
+            <a href="#contact" class="btn btn-white">
+                <span>Hubungi Kami</span>
+                <i class='bx bx-right-arrow-alt'></i>
+            </a>
+        </div>
+        <div class="cta-decoration">
+            <span>🍕</span>
+            <span>🧀</span>
+            <span>🌿</span>
+            <span>🍅</span>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="#" class="logo">🍕 Pizza Rakat Timur</a>
+                <p>Pizza artisan terbaik dengan cita rasa otentik yang menggugah selera setiap saat.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" aria-label="TikTok"><i class='bx bxl-tiktok'></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#services">Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Kontak</h4>
+                <ul>
+                    <li><i class='bx bxs-map'></i> Pizza Rakat Timur, Yogyakarta</li>
+                    <li><i class='bx bxs-phone'></i> +62 812-3456-7890</li>
+                    <li><i class='bx bxs-envelope'></i> rijaldelimanafe@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Pizza Rakat Timur. Dibuat dengan ❤ oleh <strong>Rijald D. Elimanafe</strong></p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-top" id="backTop" aria-label="Back to top">
+        <i class='bx bx-chevron-up'></i>
+    </button>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
